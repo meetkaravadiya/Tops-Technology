@@ -3,7 +3,7 @@ import random
 target_number = random.randint(1, 100)
 guess = True
 
-
+print("gusse number between 1 to 100 ")
 while guess:
         num = int(input("Enter your guess: "))
         
