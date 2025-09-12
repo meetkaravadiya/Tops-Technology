@@ -49,12 +49,13 @@ else:
 # ==================================== 1st innings ========================================================
 
 result = [0,1,2,3,4,6,"w","no ball"]
-balls = 6
 run = 0
 wicket = 0
 ball = 0
-print(f"{batfirst}: {run}/{wicket} ({ball})")
 overball = f"0.{ball}"
+c2 = None
+print(f"{batfirst}: {run}/{wicket} ({ball})")
+
 
 while ball < 6 and wicket < 1:
     input("------------------ press enter for ball ----------------------")
@@ -72,21 +73,23 @@ while ball < 6 and wicket < 1:
         run += c1
         ball += 1
         print(f"{c1} runs")
-        print(f"{batfirst}: {run}/{wicket} ({overball})")
     
     if c1 == 'no ball':
         run +=1
         print(f"{c1}!!")
-        print(f"{batfirst}: {run}/{wicket} ({overball})")
         
-
     if c1 == 'w':
-        wicket+=1
-        print(f"it is wicket")
-        print(f"{batfirst}: {run}/{wicket} ({overball})")
-    
+        if c2 == 'no ball':
+            print("not out")
+            
+        else:
+            wicket+=1
+            print(f"it is wicket")
 
-print(f"{bowlfirst} need {run+1} runs in {balls} balls to win")
+    print(f"{batfirst}: {run}/{wicket} ({overball})")        
+    c2 = c1
+
+print(f"{bowlfirst} need {run+1} runs in 6 balls to win")
 print()
 
 # ======================================= 2nd innigs ==================================================
@@ -98,7 +101,7 @@ run1 = 0
 wicket = 0
 ball = 0
 overball = f"0.{ball}"
-
+c2 = None
 
 print(f"{bowlfirst}: {run1}/{wicket} ({ball})")
 
@@ -119,19 +122,21 @@ while ball < 6 and wicket< 1 and run+1 > run1:
         ball += 1
         balls -= 1
         print(f"{c1} runs")
-        print(f"{bowlfirst}: {run1}/{wicket} ({overball})")
 
-    
     if c1 == 'no ball':
         run1 +=1
         print(f"{c1}!!")
-        print(f"{bowlfirst}: {run1}/{wicket} ({overball})")
-
-
+        
     if c1 == 'w':
-        wicket+=1
-        print(f"it is wicket")
-        print(f"{bowlfirst}: {run1}/{wicket} ({overball})")
+        if c2 == 'no ball':
+            print('not out')
+            
+        else:    
+            wicket+=1
+            print(f"it is wicket")
+            
+    print(f"{bowlfirst}: {run1}/{wicket} ({overball})")
+    c2 = c1
 
     if wicket < 1 and run+1 > run1 and ball < 6 :
         print(f"{bowlfirst} need {(run+1)-run1} runs in {balls} balls to win")
