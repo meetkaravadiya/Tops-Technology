@@ -54,7 +54,7 @@ run = 0
 wicket = 0
 ball = 0
 print(f"{batfirst}: {run}/{wicket} ({ball})")
-
+overball = f"0.{ball}"
 
 while ball < 6 and wicket < 1:
     input("------------------ press enter for ball ----------------------")
@@ -88,7 +88,6 @@ while ball < 6 and wicket < 1:
 
 print(f"{bowlfirst} need {run+1} runs in {balls} balls to win")
 print()
-print()
 
 # ======================================= 2nd innigs ==================================================
 
@@ -98,6 +97,8 @@ balls = 6
 run1 = 0
 wicket = 0
 ball = 0
+overball = f"0.{ball}"
+
 
 print(f"{bowlfirst}: {run1}/{wicket} ({ball})")
 
