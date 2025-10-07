@@ -15,3 +15,4 @@ for i in l1:
         count+=1
 
 print("count of string are: ",count)
+

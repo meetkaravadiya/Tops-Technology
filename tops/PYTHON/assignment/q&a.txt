@@ -1,0 +1,223 @@
+1.What are the types of Applications? 
+ans:
+There are mainly four types of applications in Python:
+Web Applications – Built using frameworks like Django, Flask.
+Desktop Applications – Made with Tkinter, PyQt, Kivy.
+Data Science / AI Applications – Use libraries like NumPy, Pandas, TensorFlow.
+Automation / Scripting Applications – For automating tasks (file handling, web scraping, etc.).
+
+=====================================================================================================
+
+2. What is programing? 
+ans:
+Programming is the process of writing instructions (code) that a computer can understand and execute to 
+perform specific tasks or solve problems.
+
+==========================================================================================================
+
+3.What is Python? 
+ans:
+Python is a high-level, interpreted programming language that is easy to read, write, and learn.
+It’s known for:
+Simple syntax (looks like English)
+Cross-platform support
+Powerful libraries for web, data, AI, automation, etc.
+
+==========================================================================================================
+
+7.How memory is managed in Python?
+ans:
+In Python, memory is managed automatically using:
+Private Heap Space – All objects and data are stored here.
+Memory Manager – Allocates and releases memory for objects.
+Garbage Collector – Frees memory by removing unused objects automatically.
+
+=============================================================================================================
+
+8. What is the purpose continuing statement in python?
+ans:
+The continue statement in Python is used to skip the rest of the code inside a loop for the current iteration
+and move to the next iteration.
+
+=============================================================================================================
+
+17. What are negative indexes and why are they used?
+ans:
+Negative indexes in Python are used to access elements from the end of a sequence (like list, string, or tuple).
+
+===============================================================================================================
+
+25. What is List? How will you reverse a list? 
+ans:
+A List in Python is a collection of ordered, mutable (changeable) items, written inside square brackets [ ].
+To reverse a list:
+Using reverse() method: my_list.reverse()
+Using slicing: my_list = my_list[::-1]
+
+===============================================================================================================
+
+26. How will you remove last object from a list?
+ans:
+You can remove the last object from a list using the pop() method.
+
+=================================================================================================================
+
+27. Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [-
+1]? 
+ans:
+25
+
+==============================================================================================================
+
+28. Differentiate between append () and extend () methods?
+ans:
+append() → adds one item as a single element (e.g. [1, 2, [3, 4]])
+extend() → adds multiple items individually (e.g. [1, 2, 3, 4])
+
+===========================================================================================================
+
+30. How will you compare two lists?
+ans:
+i can compare two lists using the == operator.
+
+============================================================================================================
+
+43. What is tuple? Difference between list and tuple.
+ans:
+A tuple is an ordered collection of items like a list, but it is immutable (can’t be changed). Tuples are written using parentheses ( ).
+
+Difference between List and Tuple:
+List – mutable , uses [ ], slower.
+Tuple – immutable , uses ( ), faster.
+
+=============================================================================================================
+
+47. How will you create a dictionary using tuples in python?
+ans:
+You can create a dictionary from tuples using the dict() function.
+ex: t = (("a", 1), ("b", 2), ("c", 3))
+d = dict(t)
+
+=========================================================================================================
+
+51. How Do You Traverse Through a Dictionary Object in Python?
+ans:
+You can traverse a dictionary using a for loop.
+
+===========================================================================================================
+
+52. How Do You Check the Presence of a Key in A Dictionary? 
+ans:
+You can check if a key exists in a dictionary using the in keyword.
+
+===========================================================================================================
+
+65. How Many Basic Types of Functions Are Available in Python? 
+ans:
+There are two basic types of functions in Python:
+Built-in Functions → Already provided by Python (e.g. print(), len(), max()).
+User-defined Functions → Created by the programmer using def.
+
+===========================================================================================================
+
+66. How can you pick a random item from a list or tuple? 
+ans:
+You can use the random.choice() function from the random module.
+
+================================================================================================================
+
+67. How can you pick a random item from a range?
+ans:
+You can use random.randrange() or random.randint().
+
+========================================================================================================
+
+68. How can you get a random number in python?
+ans:
+You can get a random number using the random module.
+
+===============================================================================================================
+
+69. How will you set the starting value in generating random numbers? 
+ans:
+You can set the starting value (seed) using random.seed().
+
+===============================================================================================================
+
+70. How will you randomize the items of a list in place?
+ans:
+You can randomize (shuffle) a list in place using random.shuffle().
+
+=================================================================================================================
+
+71.What is File function in python? What are keywords to create
+and write file. 
+ans:
+The file function in Python is used to create, open, read, and write files using the open() function.
+Common modes (keywords):
+'r' → read
+'w' → write (creates new or overwrites file)
+'a' → append
+'x' → create new file
+'r+' → read and write
+
+===============================================================================================================
+
+83. Explain Exception handling? What is an Error in Python? 
+ans:
+Exception handling in Python is a way to handle runtime errors so the program doesn’t crash. It uses try, except, else, and 
+finally blocks.
+Error:
+An error is a problem in the program that stops execution — it can be syntax error or runtime error (exception).
+
+===========================================================================================================
+
+84. How many except statements can a try-except block have? Name
+Some built-in exception classes:
+ans:
+A try block can have multiple except statements, each handling a different type of exception.
+Common built-in exception classes:
+ValueError
+TypeError
+ZeroDivisionError
+IndexError
+KeyError
+FileNotFoundError
+
+=================================================================================================================
+
+85. When will the else part of try-except-else be executed? 
+ans:
+he else part of a try-except-else block runs only if no exception occurs in the try block.
+
+=============================================================================================================
+
+86. Can one block of except statements handle multiple exception?
+ans:
+Yes, one except block can handle multiple exceptions by putting them in parentheses.
+
+==============================================================================================================
+
+87. When is the finally block executed?
+ans:
+The finally block is executed always, whether an exception occurs or not.
+
+==================================================================================================================
+
+88. What happens when „1‟== 1 is executed? 
+ans:
+When "1" == 1 is executed, it returns False
+Because "1" is a string and 1 is an integer — Python does not convert types automatically for comparison.
+
+===============================================================================================================
+
+89. How Do You Handle Exceptions with Try/Except/Finally in Python?
+Explain with coding snippets. 
+ans:
+try → code that may cause an error
+except → handles specific errors
+else → runs if no error occurs
+finally → always runs (cleanup actions, closing files, etc.)
+
+=================================================================================================================
+
