@@ -1,12 +1,15 @@
 # Write a Python program to check whether a list contains a sub list
 
-l1 = [1,2,3,4,5,6,7,8]
+l1 = [23,45,99,100,101,44,58]
 
-l2 = [4,5]
-s = False
-for i in range(len(l1)-len(l2)+1):
-    if l1[i:i+len(l2)] == l2:
-        s = True
-        break
+l2 = [45,58]
 
-print(s)
+count = 0
+for i in l2:
+    if i in l1:
+        count +=1
+
+if count == len(l2):
+    print(True)
+else:
+    print(False)
